@@ -1,0 +1,14 @@
+Create file ~/.config/autostart/MyScript.desktop with
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=MyScript
+Comment=MyScript
+Icon=gnome-info
+Exec=python /home/your_path/script.py
+Terminal=false
+Type=Application
+Categories=
+
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=0
