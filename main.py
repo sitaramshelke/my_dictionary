@@ -3,6 +3,7 @@ import urllib2
 from urllib2 import Request,urlopen,URLError
 import sys
 from PyQt4 import QtGui,QtCore
+import getpass
 global flag
 flag = 0
 def getword():
@@ -66,7 +67,8 @@ def main():
     w.setWindowTitle('Word of the Day')
     w.show()
     
-    label = QtGui.QLabel("<b><i><H1>Welcome Sitaram!!<H1></i></b>")
+    username = getpass.getuser()
+    label = QtGui.QLabel("<b><i><H1>Welcome "+username+"<H1></i></b>")
     label.setParent(w)
     label.move(120,20)
     label.show()
